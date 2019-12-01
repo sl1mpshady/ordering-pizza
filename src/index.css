@@ -1,13 +1,95 @@
+@import '~antd/dist/antd.css';
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container .row.main {
+    min-height: 100vh;
+    margin-top: 4em;
+}
+
+.ant-card {
+    border-radius: 11px;
+}
+
+.ant-card.ordering-list {
+    min-height: 500px;
+}
+
+.ant-typography,
+.order-controls,
+.order-items .item,
+.order-list-header,
+.ant-modal-title {
+    font-family: 'League Spartan';
+}
+
+.order-list-header {
+    color: #9B9B9B;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 0.5em;
+}
+
+.order-items .item {
+    padding-bottom: 1em;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.order-items .item .name,
+.order-items .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.order-items .item .name svg {
+    margin-right: 1em;
+}
+
+.order-items .item .name h4,
+.order-items .item .quantity h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.order-items .item .quantity h3 {
+    text-align: center;
+}
+
+.order-items .item .quantity .ant-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-controls {
+    bottom: 1em;
+    position: absolute;
+    width: -webkit-fill-available;
+    left: 0;
+    padding: 0 2em;
+}
+
+.total-slices {
+    background-color: rgba(220, 220, 220, 0.47);
+    padding-top: 6px;
+    border-radius: 7px;
+}
+
+.total-slices * {
+    color: #2c3e50 !important;
+}
+
+.orders .ant-list-item {
+    padding: 5px 0 !important;
 }
